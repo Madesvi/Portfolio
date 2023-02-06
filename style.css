@@ -26,6 +26,15 @@ body {
   margin: 0;
 }
 
+.work-in-progress {
+  color: #f7e8e8;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: italic;
+  justify-content: center;
+}
+
 .btn {
   justify-content: center;
   align-items: center;
