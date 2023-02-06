@@ -1,0 +1,331 @@
+:root {
+  --gray-background-color: #efede7;
+  --purple-card-color: #5e498b;
+  --light-gray-card-color: #787880;
+  --dark-gray-card-color: #4b4a51;
+  --blue-ld-button-color: #0a66c2;
+  --gray-gh-button-color: #24292f;
+  --blue-fb-button-color: #0778e9;
+  --green-en-button-color: #81b441;
+  --white-color: #ffffff;
+  --gray-light-card-color: #9e9da8;
+  --black-color: #000000;
+  --box-shadow: var(box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.45));
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--gray-background-color);
+  height: 100vh;
+  margin: 0;
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px 6px;
+  gap: 10px;
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 12px;
+  transition-duration: 0.2s;
+  height: 30px;
+}
+
+.btn.lnk {
+  width: 86px;
+  /* height: 30px; */
+}
+
+.lnk:is(:hover, :focus) {
+  width: 86px;
+  /* height: 30px; */
+  background: var(--blue-ld-button-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  color: var(--white-color);
+}
+
+.btn.gh {
+  width: 72px;
+  /* height: 30px; */
+}
+
+.gh:is(:hover, :focus) {
+  width: 72px;
+  /* height: 30px; */
+  background: var(--gray-gh-button-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  color: var(--white-color);
+}
+
+.btn.fb {
+  width: 93px;
+  /* height: 30px; */
+}
+
+.fb:is(:hover, :focus) {
+  width: 93px;
+  /* height: 30px; */
+  background: var(--blue-fb-button-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  color: var(--white-color);
+}
+
+.btn.env {
+  width: 73px;
+  /* height: 30px; */
+}
+
+.env:is(:hover, :focus) {
+  width: 73px;
+  /* height: 30px; */
+  background: var(--green-en-button-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  color: var(--white-color);
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  height: 100%;
+  width: 100%;
+}
+
+/* nav {
+  border: 2px solid red !important;
+} */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  height: 80px;
+  background: var(--white-color);
+  border-radius: 0px 0px 12px 12px;
+  padding-right: 32px;
+  padding-left: 32px;
+  transition-duration: 0.3s;
+}
+
+nav:is(:hover, :focus) {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.45);
+  border-radius: 0px 0px 12px 12px;
+}
+
+nav .logo {
+  color: var(--gray-gh-button-color);
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+}
+
+/* About section */
+/* 
+.about-section {
+  border: 2px solid red !important;
+} */
+
+.about-section {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.about-section .left {
+  width: 632px;
+  height: 200px;
+  background-color: var(--purple-card-color);
+  border-radius: 12px;
+  padding-left: 32px;
+  padding-right: 50px;
+  transition-duration: 0.3s;
+}
+
+.about-section .left:is(:hover, :focus) {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+}
+
+.about-section .left h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+
+.about-section .left p {
+  font-family: "Josefin Sans" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white-color);
+  margin: 0;
+}
+
+.about-section .right {
+  width: 304px;
+  height: 200px;
+  background-color: var(--gray-light-card-color);
+  border-radius: 12px;
+  padding-left: 58px;
+  padding-top: 2px;
+}
+
+/* Education section */
+
+.education-section {
+  display: flex;
+  height: 264px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.education-section .left-ed {
+  width: 468px;
+  height: 264px;
+  background-color: var(--light-gray-card-color);
+  border-radius: 12px;
+  padding-left: 32px;
+  color: var(--white-color);
+  transition-duration: 0.3s;
+}
+
+.education-section .left-ed:is(:hover, :focus) {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+}
+
+.education-section .left-ed h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+
+.education-section .left-ed p {
+  font-family: "Josefin Sans" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white-color);
+  margin: 0;
+  margin-right: 75px;
+}
+
+.education-section .right-ed {
+  width: 468px;
+  height: 264px;
+  background-color: var(--white-color);
+  border-radius: 12px;
+  color: var(--white-color);
+  transition-duration: 0.3s;
+}
+
+.education-section .right-ed:is(:hover, :focus) {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+}
+
+.education-section .right-ed h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: var(--black-color);
+  padding-left: 32px;
+}
+
+.education-section .right-ed ul {
+  font-family: "Josefin Sans" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black-color);
+  padding-left: 45px;
+  margin: 0;
+}
+
+/* Summary section */
+
+.summary-section {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.summary-section .center-sm {
+  width: 960px;
+  height: 344px;
+  background-color: var(--dark-gray-card-color);
+  border-radius: 12px;
+  color: var(--white-color);
+  transition-duration: 0.3s;
+  margin-top: 16px;
+}
+
+.summary-section .center-sm h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--white-color);
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  padding-left: 32px;
+}
+
+.summary-section .center-sm ul {
+  font-family: "Josefin Sans" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white-color);
+  margin: 0;
+  line-height: 18px;
+  padding-left: 48px;
+}
+
+.summary-section .center-sm:is(:hover, :focus) {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+}
